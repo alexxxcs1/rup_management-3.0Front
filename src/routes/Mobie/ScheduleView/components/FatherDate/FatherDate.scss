@@ -1,0 +1,53 @@
+.FatherDateBox {
+    width: 100%;
+    // height: 60px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    margin: 8px 0px;
+    .FatherBox {
+        width: 100%;
+        min-height: 60px;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        background: rgba($color: #B9D3FF, $alpha: 0.6);
+        color: #004098;
+        .FatherDateTitle {
+            width: 106px;
+            height: 60px;
+            background: #004098;
+            color: #fff;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 28px;
+        }
+
+        .DateTime {
+            flex-grow: 1;
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+            font-size: 24px;
+
+            span {
+                margin-right: 30px;
+            }
+            span:nth-child(2){
+                width: 93px;
+                margin: 0px;
+            }
+        }
+    }
+    .ChildrenBox{
+        width: 100%;
+        // height: 300px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+}

@@ -1,0 +1,75 @@
+.ChildTableBox{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 6px 0px;
+    .TableRow{
+        width: 100%;
+        border-bottom: rgba($color: #004098, $alpha: 0.2) 1px solid;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        div:nth-child(1){
+            width: 113px;
+            min-width: 113px;
+        }
+        div:nth-child(2){
+            width: 467px;
+            min-width: 467px;
+        }
+        div:nth-child(3){
+            width: 93px;
+            min-width: 93px;
+        }
+        .TableCoulm{
+            padding: 10px 0px;
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+            color: #004098;
+        }
+
+        .TableHead{
+            text-indent: 0px;
+            font-size: 24px;
+        }
+        .TableHeadTime{
+            text-indent: 14px;
+        }
+        .TimeStyle{
+            font-size: 18px;
+            text-indent: 6px;
+        }
+        .ContentStyle{
+            font-size: 21px;
+            color: #595757 !important;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-indent: 0px;
+            .contents{
+                min-width: 100%;
+                max-width: 100%;
+            }
+        }
+        .HostStyle{
+            font-size: 21px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            color: #595757 !important;
+            position: relative;
+            .hosts{
+                min-width: 100%;
+                max-width: 100%;
+            }
+        }
+    }
+}
+
+

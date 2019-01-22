@@ -1,0 +1,98 @@
+.AppViewBox{
+    width: 100%;
+    max-width: 750px;
+    height: 100%;
+    background-color: #fff;
+    margin: 0 auto;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .AppViewContent{
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        
+        .AppHeadBanner{
+            width: 100%;
+            height: 400px;
+            min-height: 400px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            overflow: hidden;
+            // background-color: #333;
+            img{
+                width: 100%;
+            }
+        }
+
+        .AppIconBox{
+            width: 100%;
+            flex-grow: 1;
+
+            .AppIconListBox{
+                width: 690px;
+
+                margin: 20px auto;
+                position: relative;
+                display: flex;
+                flex-direction: row;
+                flex-wrap: wrap;
+                a{
+                    .Icon{
+                        width: 200px;
+                        height: 200px;
+                        margin:15px;
+                        background-color: #f9f9f9;
+                        border-radius: 20px;
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: center;
+                        align-items: center;
+                        .IconBox{
+                            width: 150px;
+                            height: 120px;
+                            // background-color: #fff;
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                            overflow: hidden;
+                            img{
+                                width: 70px;
+                            }
+                            border-bottom:2px #1f5462 solid;
+                        }
+                        .IconName{
+                            width: 100%;
+                            height: 80px;
+                            // background-color: #f9f9f9;
+                            font-size: 26px;
+    
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                            color: #333;
+                        }
+                    }
+                }
+                
+            }
+        }
+        .AppBotBanner{
+            width: 100%;
+            height: 260px;
+            min-height: 260px;
+            // background-color: #333;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            overflow: hidden;
+            img{
+                width: 100%;
+            }
+        }
+    }
+    
+}

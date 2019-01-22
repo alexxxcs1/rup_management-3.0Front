@@ -1,0 +1,21 @@
+.ScheduleViewBox{
+    width: 100%;
+    height: 100%;
+    max-width: 750px;
+    margin: 0 auto;
+    overflow-x: hidden;
+    // background: #333;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    background: #fff;
+    user-select: none;
+    .HeadImg{
+        max-width: 100%;
+    }
+    .PaddingBox{
+        width: 675px;
+        padding: 23px 0px;
+    }
+}

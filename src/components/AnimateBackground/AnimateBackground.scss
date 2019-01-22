@@ -1,0 +1,106 @@
+.AnimateBackgroundBox
+{
+    width: 100%;
+    height: 100%;
+    
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    z-index: -1;
+
+
+    display: flex;
+    display: -webkit-flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: nowrap;
+}
+.Box
+{
+    --randomtime:30s;
+    width: 300px;
+    height: 300px;
+    /* background-color: rgba(255, 0, 0, 0.8); */
+
+    position: relative;
+
+    animation: rotating var(--randomtime) linear infinite;
+    transform-origin: 66% 66%;
+}
+.Box span
+{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    clip-path: polygon(57% 0, 75% 0, 26% 85%, 89.5% 85%, 98.4% 100%, 0 100%);
+    background-color: currentColor;
+    
+    /* animation: tween 0.5s infinite; */
+}
+.Box span:nth-child(1)
+{
+    transform: rotate(0deg);
+    filter: brightness(1);
+}
+.Box span:nth-child(2)
+{
+    transform: rotate(120deg);
+    filter: brightness(0.66);
+    top: 18.3%;
+    left: 43.3%;
+}
+.Box span:nth-child(3)
+{
+    transform: rotate(240deg);
+    filter: brightness(0.33);
+
+    top: 46.5%;
+    left: 5.9%;
+}
+
+@keyframes tween
+{
+    0%
+    {
+        width: 100%;
+        height: 100%;
+    }
+    50%
+    {
+        width: 80%;
+        height: 80%;
+    }
+    100%
+    {
+        width: 100%;
+        height: 100%;
+    }
+}
+
+@keyframes rotating {
+    0% {
+        color: #333333;
+        transform: rotate(0deg);
+    }
+
+    20% {
+        color: #ffffff;
+    }
+
+    40% {
+        color: #333333;
+    }
+
+    60% {
+        color: #ffffff;
+    }
+
+    80% {
+        color: #333333;
+    }
+
+    100% {
+        color: #333333;
+        transform: rotate(720deg);
+    }
+}
